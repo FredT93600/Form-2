@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/style.css" />
+    <script src="/asset/app.js"></script>
+    <title>formulaire</title>
+  </head>
+  <body>
+    <h1>Mon formulaire idéal</h1>
+    <!-- container principal -->
+    <div class="container">
+      <!-- Mon formulaire -->
+      <form action="" method="">
+        <!-- on recupere le nom -->
+        <label for="lastName">Nom</label>
+        <input
+          type="text"
+          id="lastName"
+          name="costaRica"
+          placeholder="Entrez votre nom"
+        />
+        <!-- on recupere le prenom -->
+        <label for="firstName">Prénom</label>
+        <input
+          type="text"
+          id="firstName"
+          name="Mbappe"
+          placeholder="Entrez votre prénom"
+        />
+        <!-- on recupere l'age -->
+        <label for="age">Age</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          placeholder="Entrez votre âge"
+        />
+        <!-- on recupere l'e-mail -->
+        <label for="mail">Courriel</label>
+        <input
+          type="email"
+          id="mail"
+          name="email"
+          placeholder="Entrez votre adresse mail!"
+        />
+        <!-- on recupere un commentaire -->
+        <label for="comment">commentaire</label>
+        <textarea
+          name="comments"
+          id="comment"
+
+          placeholder="Entrez votre commentaire"
+        ></textarea>
+        <!-- on recupere le secteur d'activité -->
+        <label for="secAct">Secteur d'activité</label>
+        <select name="sec_Act" id="secAct">
+          <option value="commerce">commerce</option>
+          <option value="BTP">BTP</option>
+          <option value="services">services</option>
+          <option value="industrie">industrie</option>
+          <option value="transport">transport</option>
+        </select>
+        <!-- on recupere le metier -->
+        <label>Metier</label>
+        <input list="metiers" />
+        <datalist id="metiers">
+          <option value="testeur de tobogan"></option>
+          <option value="testeur de paté pour chien"></option>
+          <option value="testeur de matelas"></option>
+          <option value="testeur de jeux video"></option>
+        </datalist>
+
+        <button>Envoyer</button>
+      </form>
+    </div>
+  </body>
+</html>
